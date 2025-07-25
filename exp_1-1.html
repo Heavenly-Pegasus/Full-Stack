@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+</head>
+<body>
+    <body style="background-color: #d4f7d4;">
+        <h2>Registration Form</h2>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="1" required><br><br>
+
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label><br><br>
+
+        <label for="course">Course:</label>
+        <select id="course" name="course" required>
+            <option value="">Select a course</option>
+            <option value="web">Web Development</option>
+            <option value="data">Data Science</option>
+            <option value="ai">Artificial Intelligence</option>
+            <option value="cloud">Cloud Computing</option>
+        </select><br><br>
+
+        <div style="border:1px solid #ccc; padding:10px; margin-bottom:10px; max-width:400px; background:#f9f9f9;">
+            <strong>Terms and Conditions</strong>
+            <p style="font-size: 0.95em;">
+                By registering, you agree to provide accurate information and abide by the rules of the course. Your data will be used solely for registration purposes. You must be at least 18 years old to participate. Violation of terms may result in removal from the EARTH XD .
+            </p>
+        </div>
+
+        <input type="checkbox" id="terms" name="terms" required>
+        <label for="terms">I agree to the Terms and Conditions</label><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
